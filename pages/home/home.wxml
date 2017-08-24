@@ -3,6 +3,6 @@
 </scroll-view>
 <view class="buttom_button">
   <navigator url="../form/form">
-    <button type="primary" class="buttom_button"> 立即预约免费上门测绘 </button>
+    <button type="primary" class="buttom_button"> 立即预约上门订制 </button>
   </navigator>
 </view>

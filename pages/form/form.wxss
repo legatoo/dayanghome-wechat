@@ -9,6 +9,7 @@
 
 .body .head {
     flex: 0 0 5%;
+    align-items: center;
 }
 
 .body .foot {
@@ -23,7 +24,7 @@
 
 .body .flexbox {
     flex: 0 0 90%;
-    display: flex;
+    display: block;
     flex-direction: column;
     -webkit-border-radius: 8px/7px;
     -moz-border-radius: 8px/7px;
@@ -36,16 +37,15 @@
 }
 
 .flexbox .header {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 200;
     color: black;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
 }
 
 .Grid {
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -59,6 +59,8 @@
 
 .cell-u-3of4-white {
     flex: 0 0 75%;
+    padding: 2px;
+
     background: white;
 }
 
@@ -73,15 +75,14 @@
     flex: 0 0 75%;
 }
 
-.flexbox .footer {
-    padding-top: 5px;
+.flexbox .submitbuttom {
+    padding-top: 20px;
 }
 
 .flexbox .inputblock {
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 20px;
-    margin-right: 5px;
+    font-size: 20px;
 }
 
 .notice {

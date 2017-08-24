@@ -1,6 +1,7 @@
 <!--form.wxml-->
 <view class="body">
-    <view class="body head"></view>
+    <view class="body head">
+    </view>
     <view class="body flexbox">
         <view class="header">
             预约登记
@@ -115,7 +116,7 @@
             </view>
         </view>
 
-        <view class="footer">
+        <view class="submitbuttom">
             <navigator url="../success/success">
                 <button type="primary" bindtap="listenSubmit"> 提交 </button>
             </navigator>
