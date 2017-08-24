@@ -1,0 +1,127 @@
+<!--form.wxml-->
+<view class="body">
+    <view class="body head"></view>
+    <view class="body flexbox">
+        <view class="header">
+            预约登记
+        </view>
+
+        <view class="inputblock">
+            <view class="Grid">
+                <view class="Grid-cell cell-u-1of4">
+                    称谓：
+                </view>
+                <view class="Grid-cell cell-u-3of4-transparent">
+                    <radio-group>
+                        <radio value="male" checked="true" />先生
+                        <radio value="female" />女士
+                    </radio-group>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="inputblock">
+            <view class="Grid">
+                <view class="Grid-cell cell-u-1of4">
+                    姓名：
+                </view>
+                <view class="Grid-cell .cell-u-3of4-white">
+                    <input type="text" />
+                </view>
+            </view>
+        </view>
+
+        <view class="inputblock">
+            <view class="Grid">
+                <view class="Grid-cell cell-u-1of4">
+                    电话：
+                </view>
+                <view class="Grid-cell .cell-u-3of4-white">
+                    <input type="number" />
+                </view>
+            </view>
+        </view>
+
+        <view class="inputblock">
+            <view class="Grid">
+                <view class="Grid-cell cell-u-1of4">
+                    日期：
+                </view>
+                <view class="Grid-cell .cell-u-3of4-white">
+                    <picker mode="date" value="{{appointmentDay}}" start="{{appointmentDay}}" end="2020-01-01" bindchange="bindDateChange">
+                        <view class="picker">
+                            {{appointmentDay}}
+                        </view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+
+        <view class="inputblock">
+            <view class="Grid">
+                <view class="Grid-cell cell-u-1of4">
+                    时段：
+                </view>
+                <view class="Grid-cell .cell-u-3of4-white">
+                    <picker mode="multiSelector" bindchange="bindMultiPickerChange" value="{{hourIndex}}" range="{{hourRange}}">
+                        <view class="picker">
+                            {{hourRange[0][hourIndex[0]]}}时 - {{hourRange[1][hourIndex[1]]}}时
+                        </view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+
+        <view class="inputblock">
+            <view class="Grid">
+                <view class="Grid-cell cell-u-1of4">
+                    省份：
+                </view>
+                <view class="Grid-cell .cell-u-3of4-white">
+                    <picker bindchange="bindProvinceChange" value="{{provinceId}}" range="{{districts}}">
+                        <view class="picker">
+                            {{districts[provinceId]}}
+                        </view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+
+        <view class="inputblock">
+            <view class="Grid">
+                <view class="Grid-cell cell-u-1of4">
+                    城市：
+                </view>
+                <view class="Grid-cell .cell-u-3of4-white">
+                    <picker bindchange="bindCityChange" value="{{cityId}}" range="{{districts}}">
+                        <view class="picker">
+                            {{districts[cityId]}}
+                        </view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="inputblock">
+            <view class="Grid">
+                <view class="Grid-cell cell-u-1of4">
+                    地址：
+                </view>
+                <view class="Grid-cell .cell-u-3of4-white-fat">
+                    <input placeholder="小区/单元/房间" typr="text" />
+                </view>
+            </view>
+        </view>
+
+        <view class="footer">
+            <navigator url="../success/success">
+                <button type="primary" bindtap="listenSubmit"> 提交 </button>
+            </navigator>
+        </view>
+    </view>
+    <view class="body foot">
+        <view class="notice">您的信息加密传送至服务器</view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+/*添加地址按钮*/
+.main_area {
+    margin-bottom: 46px;
+}
+.buttom_button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
