@@ -1,5 +1,5 @@
 <scroll-view class="main_area">
-  <image bindload="cusImageLoad" src="../../img/dayang.jpg" style="width:{{imageWidth}}px;height:{{imageheight}}px" />
+  <image bindload="cusImageLoad" src="../../img/dayang.png" style="width:{{imageWidth}}px;height:{{imageHeight}}px" />
 </scroll-view>
 <view class="buttom_button">
   <navigator url="../appointment/appointment">

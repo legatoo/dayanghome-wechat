@@ -28,8 +28,13 @@ Page({
       title: '即将上线',
     })
   },
+
+  jumptoproducts: function () {
+      wx.navigateTo({
+          url: '../products/products'
+      })
+  },
   onLoad: function () {
-    console.log('homepage')
     var that = this
     app.getUserInfo(function (userInfo) {
       that.setData({

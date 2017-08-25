@@ -3,6 +3,7 @@
         "pages/homepage/homepage",
         "pages/about/about",
         "pages/appointment/appointment",
+        "pages/products/products",
         "pages/success/success"
     ],
     "window": {

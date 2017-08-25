@@ -1,12 +1,12 @@
 <!--success.wxml-->
 <view class="Grid">
-  <view class="Grid-cell1">
-    <image src="../../img/success.png" style="width:100px;height:100px" />
+    <view class="Grid-cell1">
+        <image src="../../img/success.png" style="width:100px;height:100px" />
     </view>
     <view class="Grid-cell2">
-      <text>预约成功!</text>
-      <text>工作人员会尽快与您联系~</text>
+        <text>预约成功 (ง •̀_•́)ง</text>
     </view>
-
-
+    <view class="Grid-cell2">
+        <text>工作人员会尽快与您联系~</text>
+    </view>
 </view>

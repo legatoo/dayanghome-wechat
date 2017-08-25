@@ -41,17 +41,16 @@ function wxAutoImageCal(e) {
                 autoHeight = (autoWidth * originalHeight) / originalWidth;
                 console.log("autoHeight" + autoHeight);
                 results.imageWidth = autoWidth;
-                results.imageheight = autoHeight;
+                results.imageHeight = autoHeight;
             } else {//否则展示原来的数据
                 results.imageWidth = originalWidth;
-                results.imageheight = originalHeight;
+                results.imageHeight = originalHeight;
             }
         }
     })
-
     return results;
-
 }
+
 
 module.exports = {
     wxAutoImageCal: wxAutoImageCal

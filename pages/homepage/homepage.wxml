@@ -1,58 +1,47 @@
 <!--homepage.wxml-->
 <view class="body">
-  <view class="toppadding"></view>
-  <view class="top">
-    <view class="userinfo">
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </view>
-  </view>
-  <view class="middle">
-
-    <view class="paddingsmall"></view>
+    <image class="logobanner" src="../../img/dayang-logo.png"></image>
 
     <view class="functionwrapper">
-      <view class="level1">
-        <view bindtap="jumptoabout" class="functionleft">
-          <view class="cell1to6"></view>
-          <view class="cell2to6">
-            <image class="circular--square" src="../../img/about.png" background-size="cover"></image>
-          </view>
-          <view class="cell1to6">企业介绍</view>
-          <view class="cell2to6"></view>
-        </view>
-        <view bindtap="jumptoappointment" class="functionright">
-          <view class="cell1to6"></view>
-          <view class="cell2to6">
-            <image class="circular--square" src="../../img/appointment.png" background-size="cover"></image>
-          </view>
-          <view class="cell1to6">预约测绘</view>
-          <view class="cell2to6"></view>
-        </view>
-      </view>
-      <view class="level2">
-        <view bindtap="jumptocustomize" class="functionleft">
-          <view class="cell1to6"></view>
-          <view class="cell2to6">
-            <image class="circular--square" src="../../img/customize.png" background-size="cover"></image>
-          </view>
-          <view class="cell1to6">在线订制</view>
-          <view class="cell2to6"></view>
-        </view>
-        <view bindtap="jumptoaftersale" class="functionright">
-          <view class="cell1to6"></view>
-          <view class="cell2to6">
-            <image class="circular--square" src="../../img/aftersale.png" background-size="cover"></image>
-          </view>
-          <view class="cell1to6">售后服务</view>
-          <view class="cell2to6"></view>
-        </view>
-      </view>
+        <view class="level">
+            <view bindtap="jumptoabout" class="functionblock">
+                <view class="cell2to6">
+                    <image class="circular--square" src="../../img/about.png" background-size="cover"></image>
+                </view>
+                <view class="cell1to6">企业介绍</view>
+            </view>
+            <view bindtap="jumptoappointment" class="functionblock">
+                <view class="cell2to6">
+                    <image class="circular--square" src="../../img/appointment.png" background-size="cover"></image>
+                </view>
+                <view class="cell1to6">预约测绘</view>
+            </view>
 
-      <view class="paddingsmall"></view>
+        </view>
+        <view class="level">
+            <view bindtap="jumptoproducts" class="functionblock">
+                <view class="cell2to6">
+                    <image class="circular--square" src="../../img/products.png" background-size="cover"></image>
+                </view>
+                <view class="cell1to6">门窗产品</view>
+            </view>
+            <view bindtap="jumptocustomize" class="functionblock">
+                <view class="cell2to6">
+                    <image class="circular--square" src="../../img/customize.png" background-size="cover"></image>
+                </view>
+                <view class="cell1to6">在线订制</view>
+            </view>
+
+        </view>
+        <view class="level">
+            <view bindtap="jumptoaftersale" class="functionblock">
+                <view class="cell2to6">
+                    <image class="circular--square" src="../../img/aftersale.png" background-size="cover"></image>
+                </view>
+                <view class="cell1to6">售后服务</view>
+            </view>
+            <view class="functionblock"></view>
+        </view>
 
     </view>
-    <view class="padding"></view>
-    <view class="footer"></view>
-  </view>
 </view>
