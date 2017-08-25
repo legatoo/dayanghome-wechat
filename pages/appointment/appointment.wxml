@@ -80,9 +80,9 @@
                     省份：
                 </view>
                 <view class="Grid-cell .cell-u-3of4-white">
-                    <picker bindchange="bindProvinceChange" value="{{provinceId}}" range="{{districts}}">
+                    <picker bindchange="bindProvinceChange" value="{{provinceIndex}}" range="{{provinces}}" range-key="{{'provinceName'}}">
                         <view class="picker">
-                            {{districts[provinceId]}}
+                            {{provinces[provinceIndex].provinceName}}
                         </view>
                     </picker>
                 </view>
@@ -95,9 +95,9 @@
                     城市：
                 </view>
                 <view class="Grid-cell .cell-u-3of4-white">
-                    <picker bindchange="bindCityChange" value="{{cityId}}" range="{{districts}}">
+                    <picker bindchange="bindCityChange" value="{{cityIndex}}" range="{{cities[provinceId]}}" range-key="{{'cityName'}}">
                         <view class="picker">
-                            {{districts[cityId]}}
+                            {{cities[provinceId][cityIndex].cityName}}
                         </view>
                     </picker>
                 </view>

@@ -2,7 +2,7 @@
   <image bindload="cusImageLoad" src="../../img/dayang.jpg" style="width:{{imageWidth}}px;height:{{imageheight}}px" />
 </scroll-view>
 <view class="buttom_button">
-  <navigator url="../form/form">
+  <navigator url="../appointment/appointment">
     <button type="primary" class="buttom_button"> 立即预约上门订制 </button>
   </navigator>
 </view>

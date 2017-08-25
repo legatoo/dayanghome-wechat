@@ -1,7 +1,8 @@
 {
     "pages": [
-                "pages/home/home",
-        "pages/form/form",
+        "pages/homepage/homepage",
+        "pages/about/about",
+        "pages/appointment/appointment",
         "pages/success/success"
     ],
     "window": {
